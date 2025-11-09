@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anubhav Jangid — Senior Android Developer</title>
+  <meta name="description" content="Portfolio website of Anubhav Jangid — Senior Android & React Native Developer." />
+  <meta property="og:title" content="Anubhav Jangid — Senior Android Developer" />
+  <meta property="og:description" content="6+ years building Android apps with Kotlin, Jetpack Compose, MVVM, Hilt, Firebase, and React Native." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-image.jpg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="/assets/favicon.png" />
+  <style>
+    /* Modern, clean, responsive styles with light/dark mode */
+    :root{
+      --bg:#0b1020; --card:#0f172a; --muted:#94a3b8; --text:#e2e8f0; --brand:#60a5fa; --chip:#1f2937; --accent:#38bdf8;
+      --light-bg:#f8fafc; --light-card:#ffffff; --light-text:#0f172a; --light-muted:#475569; --light-chip:#f1f5f9; --light-brand:#2563eb; --light-accent:#0891b2;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.65}
+    @media (prefers-color-scheme: light){
+      body{background:var(--light-bg);color:var(--light-text)}
+    }
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0}
+    .brand{font-weight:800;font-size:20px;letter-spacing:.2px}
+    .links a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
+    @media (prefers-color-scheme: light){
+      .links a{color:var(--light-muted)}
+    }
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin-top:32px}
+    .card{background:var(--card);border:1px solid rgba(148,163,184,.18);border-radius:16px;padding:24px}
+    @media (prefers-color-scheme: light){
+      .card{background:var(--light-card);border:1px solid rgba(15,23,42,.08)}
+    }
+    h1{font-size:44px;line-height:1.1;margin:0 0 8px}
+    .subtitle{font-size:18px;color:var(--muted);margin:0 0 16px}
+    @media (prefers-color-scheme: light){
+      .subtitle{color:var(--light-muted)}
+    }
+    .cta a{display:inline-block;margin-right:12px;margin-bottom:12px;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn{background:var(--brand);color:white}
+    .btn.alt{background:transparent;border:1px solid rgba(148,163,184,.35);color:var(--text)}
+    @media (prefers-color-scheme: light){
+      .btn{background:var(--light-brand)}
+      .btn.alt{color:var(--light-text)}
+    }
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .chip{background:var(--chip);padding:8px 12px;border-radius:999px;font-size:13px;border:1px solid rgba(148,163,184,.2)}
+    @media (prefers-color-scheme: light){
+      .chip{background:var(--light-chip)}
+    }
+    section{margin-top:32px}
+    .section-title{font-size:20px;font-weight:800;margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .span-8{grid-column:span 8}
+    .span-4{grid-column:span 4}
+    .item{padding:16px;border-radius:12px;background:transparent;border:1px solid rgba(148,163,184,.18)}
+    .item h3{margin:0 0 6px;font-size:18px}
+    .item p{margin:0 0 8px;color:var(--muted)}
+    @media (prefers-color-scheme: light){
+      .item p{color:var(--light-muted)}
+    }
+    ul{margin:8px 0 0 18px}
+    li{margin:4px 0}
+    .footer{margin:48px 0 12px;color:var(--muted);font-size:14px;text-align:center}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .span-8,.span-4{grid-column:span 12}
+    }
+    a.inline{color:var(--accent);text-decoration:none;font-weight:600}
+    @media (prefers-color-scheme: light){
+      a.inline{color:var(--light-accent)}
+    }
+    .avatar{aspect-ratio:1/1;border-radius:14px;background:linear-gradient(145deg, rgba(96,165,250,.15), rgba(56,189,248,.15));border:1px solid rgba(148,163,184,.18)}
+    .contact-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width:600px){.contact-cards{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Anubhav Jangid",
+    "jobTitle":"Senior Android Developer",
+    "email":"mailto:anubhavjangid007@gmail.com",
+    "telephone":"+918209303650",
+    "url":"https://anubhavjangid.github.io",
+    "sameAs":[
+      "https://www.linkedin.com/in/anubhav-jangid/",
+      "https://github.com/AnubhavJangid",
+      "https://stackoverflow.com/users/10055674/anubhav-jangid"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">ANUBHAV&nbsp;JANGID</div>
+      <div class="links">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="card">
+        <h1>Senior Android Developer<br/>Android & React Native</h1>
+        <p class="subtitle">6+ years building production Android apps with Kotlin, Jetpack Compose, MVVM, Hilt, Firebase, and React Native. Focused on performance, accessibility, and clean architecture.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn alt" href="assets/Anubhav_Jangid_Corporate.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn alt" href="assets/Anubhav_Jangid_Startup.pdf" target="_blank" rel="noopener">Startup Resume</a>
+        </div>
+        <div class="chips" aria-label="Primary skills">
+          <span class="chip">Kotlin</span>
+          <span class="chip">Jetpack Compose</span>
+          <span class="chip">MVVM</span>
+          <span class="chip">Hilt</span>
+          <span class="chip">Coroutines</span>
+          <span class="chip">Firebase</span>
+          <span class="chip">Retrofit</span>
+          <span class="chip">React Native</span>
+          <span class="chip">Clean Architecture</span>
+        </div>
+      </div>
+      <div class="card avatar"></div>
+    </header>
+
+    <section id="experience">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="grid">
+        <div class="span-8 item">
+          <h3>Cognizant Technologies — Associate, Projects <span style="font-weight:600">(Nov 2023 – Present)</span></h3>
+          <p>Gurugram, India</p>
+          <ul>
+            <li>Developed scalable Android features in Kotlin/Java with MVVM and Clean Architecture.</li>
+            <li>Conducted code reviews and enforced standards, improving code health and onboarding.</li>
+            <li>Implemented secure data handling with encryption and authentication.</li>
+            <li>Improved build times via modularization and dependency graph optimizations.</li>
+          </ul>
+        </div>
+        <div class="span-4 item">
+          <h3>Key Stack</h3>
+          <ul>
+            <li>Kotlin, Java</li>
+            <li>Compose, ViewModel, Room</li>
+            <li>Hilt, Coroutines</li>
+            <li>Retrofit, WorkManager</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="span-8 item">
+          <h3>Tech Mahindra — Software Engineer <span style="font-weight:600">(Aug 2021 – Sept 2023)</span></h3>
+          <p>Noida, India</p>
+          <ul>
+            <li>Built reusable modules and integrated Dynatrace & Adobe Analytics for observability.</li>
+            <li>Enhanced accessibility (TalkBack), improving usability scores.</li>
+            <li>Collaborated across functions to ship stable, on-schedule releases.</li>
+          </ul>
+        </div>
+        <div class="span-4 item">
+          <h3>Key Stack</h3>
+          <ul>
+            <li>MVVM, Clean Architecture</li>
+            <li>Accessibility (WCAG 2.1)</li>
+            <li>Analytics, Monitoring</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="span-8 item">
+          <h3>iSkylar & Protocloud — Android Developer <span style="font-weight:600">(Apr 2019 – Aug 2021)</span></h3>
+          <p>Jaipur, India</p>
+          <ul>
+            <li>Delivered modules from UI/UX wireframes; optimized UI responsiveness.</li>
+            <li>Implemented guest checkout and multilingual support (5 languages) in e‑commerce apps.</li>
+            <li>Wrote unit tests and performed RCA to improve stability.</li>
+          </ul>
+        </div>
+        <div class="span-4 item">
+          <h3>Key Stack</h3>
+          <ul>
+            <li>Android Jetpack</li>
+            <li>ConstraintLayout / Compose</li>
+            <li>Unit Testing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="grid">
+        <div class="span-6 item">
+          <h3>FPL — NextEra Energy</h3>
+          <p>Billing, payments, outage updates; secure login with fingerprint.</p>
+          <a class="inline" href="https://play.google.com/store/apps/details?id=com.nee.fpl&hl=en_IN" target="_blank" rel="noopener">View on Play Store →</a>
+        </div>
+        <div class="span-6 item">
+          <h3>Kaiser Permanente</h3>
+          <p>Pharmacy module: prescription refill, order tracking, medication management.</p>
+          <a class="inline" href="https://play.google.com/store/apps/details?id=org.kp.m&hl=en" target="_blank" rel="noopener">View on Play Store →</a>
+        </div>
+        <div class="span-6 item">
+          <h3>Bell Canada</h3>
+          <p>"Add a Line" flow with SIM/eSIM support; optimized API communication.</p>
+          <a class="inline" href="https://play.google.com/store/apps/details?id=ca.bell.selfserve.mybellmobile&hl=en-IN" target="_blank" rel="noopener">View on Play Store →</a>
+        </div>
+        <div class="span-6 item">
+          <h3>Original Marines</h3>
+          <p>Multi‑language integration and multi‑item cart for an e‑commerce app.</p>
+          <a class="inline" href="https://play.google.com/store/apps/details?id=com.original.marines&hl=en_US&gl=IT" target="_blank" rel="noopener">View on Play Store →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="grid">
+        <div class="span-12 item">
+          <ul>
+            <li><strong>Languages:</strong> Kotlin, Java</li>
+            <li><strong>Frameworks:</strong> Jetpack Compose, React Native, Hilt, Firebase, Retrofit, Room, WorkManager</li>
+            <li><strong>Architecture:</strong> MVVM, Clean Architecture, Modularization</li>
+            <li><strong>Tools:</strong> Git, Jira, Bitbucket, Jenkins, Android Studio, VS Code</li>
+            <li><strong>Testing & CI/CD:</strong> Unit Testing, GitHub Actions, Firebase Test Lab</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education & Achievements</h2>
+      <div class="grid">
+        <div class="span-8 item">
+          <h3>B.Tech — Computer Science</h3>
+          <p>Amity University Rajasthan (2015–2019)</p>
+        </div>
+        <div class="span-4 item">
+          <h3>Achievements</h3>
+          <ul>
+            <li>Runner‑Up — Unisys Hackathon 20/20 (HackerEarth), 2017</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-cards">
+        <div class="item">
+          <h3>Email</h3>
+          <p><a class="inline" href="mailto:anubhavjangid007@gmail.com">anubhavjangid007@gmail.com</a></p>
+        </div>
+        <div class="item">
+          <h3>Phone</h3>
+          <p><a class="inline" href="tel:+918209303650">+91 82093 03650</a></p>
+        </div>
+        <div class="item">
+          <h3>LinkedIn</h3>
+          <p><a class="inline" href="https://www.linkedin.com/in/anubhav-jangid/" target="_blank" rel="noopener">linkedin.com/in/anubhav-jangid</a></p>
+        </div>
+        <div class="item">
+          <h3>GitHub</h3>
+          <p><a class="inline" href="https://github.com/AnubhavJangid" target="_blank" rel="noopener">github.com/AnubhavJangid</a></p>
+        </div>
+        <div class="item">
+          <h3>Stack Overflow</h3>
+          <p><a class="inline" href="https://stackoverflow.com/users/10055674/anubhav-jangid" target="_blank" rel="noopener">stackoverflow.com/users/10055674/anubhav-jangid</a></p>
+        </div>
+        <div class="item">
+          <h3>Location</h3>
+          <p>Gurgaon, Delhi‑NCR, India</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">© <span id="y"></span> Anubhav Jangid — Built with HTML & CSS — Hosted on GitHub Pages</p>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
